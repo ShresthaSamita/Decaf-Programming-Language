@@ -1,0 +1,63 @@
+=================================================
+Submitted by: Samita Shrestha, UTSA ID: qkp232
+Programming Language and Compiler
+CS5363, Spring '23
+=================================================
+
+This program is the Phase II of building Decaf 22 programming language.
+This program is the extension of the Scanner project (Phase I) and it now handles the syntax 
+analysis phase,the second task of the front-end.The parser will read Decaf source programs and construct an
+Abstract Syntax Tree (AST). If no syntax errors are found, your compiler will print the completed
+AST at the end of parsing.
+
+Development Environment:
+========================
+Linux OS (via fox server UTSA)
+
+Project Execution Steps:
+=======================
+
+Scripting file may need permission to run
+
+  Grant permission by:
+  
+   ~ cd <workdirfolderpath>
+   ~ chmod 777 build.sh OR chmod +x build.sh
+   ~ chmod 777 exec.sh  OR chmod +x exec.sh
+
+
+Building the Project:
+====================
+  ~ ./build.sh
+  
+  [NOTE: BUILD SUCCESSFUL!! on the console means the program compiled without any error!!
+         BUILD FAILED!! on the console means the program couldnot be compiled duee to some errors]
+  The program should compile successfully to execute the output.
+  
+  Once program is "BUILD SUCCESSFUL"ly, we need to execute to get the output.
+
+Executing the Project:
+=====================
+To execute in source code file:
+  ~ ./exec.sh <inputfilepath>
+
+To write to standard output stream
+  ~ ./exec.sh <inputfilepath> > <outputpath>
+
+[examples: ./exec.sh /home/qkp232/Phase2_qkp232/samples/bad1.decaf >/home/qkp232/Phase2_qkp232/output.txt]
+
+
+Here,
+
+<filepath> refers to the path of input file that you would like to scan.
+I have included the samples folder that has number of test input files.
+
+<outputpath> refers to the path where you would like to store your 
+completed output after parsing or the expected output in textual format.
+In the example above, the output is stored in /home/qkp232/Phase2_qkp232/ 
+directory with the filename as "output.txt"
+
+
+
+
+
